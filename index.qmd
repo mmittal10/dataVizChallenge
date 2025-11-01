@@ -410,7 +410,7 @@ comparison_data_2021_sorted = comparison_data.sort_values('runs_2021', ascending
 plt.style.use("seaborn-v0_8-whitegrid")
 
 
-fig, axes = plt.subplots(1, 2, figsize=(16, 8))
+fig, axes = plt.subplots(1, 2, figsize=(10, 6))
 
 
 # Create color array for highlighting Colorado
