@@ -410,7 +410,7 @@ comparison_data_2021_sorted = comparison_data.sort_values('runs_2021', ascending
 plt.style.use("seaborn-v0_8-whitegrid")
 
 
-fig, axes = plt.subplots(1, 2, figsize=(10, 6))
+fig, axes = plt.subplots(1, 2, figsize=(9, 6))
 
 
 # Create color array for highlighting Colorado
@@ -421,7 +421,7 @@ bars = axes[0].barh(comparison_data_2010_sorted.home, comparison_data_2010_sorte
 
 # Add title and labels
 axes[0].set_title("2010 Season: Colorado (COL) is the Most Run-Friendly Ballpark in 2010", 
-             fontsize=16, fontweight='bold', pad=20)
+             fontsize=13, fontweight='bold', pad=20)
 axes[0].set_xlabel("Average Runs Per Game", fontsize=12)
 axes[0].set_ylabel("Stadium (Home Team)", fontsize=12)
 
@@ -437,7 +437,7 @@ axes[0].annotate(f"COL: {colorado_runs_2010:.2f} runs/game",
             xy=(colorado_runs_2010, colorado_index+19), 
             xytext=(colorado_runs_2010, colorado_index+12),
             arrowprops=dict(arrowstyle='->', color='darkorchid', lw=2),
-            fontsize=10, fontweight='bold', color='darkorchid',
+            fontsize=9, fontweight='bold', color='darkorchid',
           )
 
 # Set x-axis to start from 0 for better comparison
@@ -454,7 +454,7 @@ bars_2021 = axes[1].barh(comparison_data_2021_sorted.home, comparison_data_2021_
 
 # Add title and labels
 axes[1].set_title("2021 Season: Colorado Remains a Top Run-Friendly Ballpark", 
-             fontsize=16, fontweight='bold', pad=20)
+             fontsize=13, fontweight='bold', pad=20)
 axes[1].set_xlabel("Average Runs Per Game", fontsize=12)
 axes[1].set_ylabel("Stadium (Home Team)", fontsize=12)
 
@@ -465,7 +465,7 @@ axes[1].annotate(f"COL: {colorado_runs_2021:.2f} runs/game",
             xy=(colorado_runs_2021, colorado_index_2021+17), 
             xytext=(colorado_runs_2021, colorado_index_2021+13),
             arrowprops=dict(arrowstyle='->', color='darkorchid', lw=2),
-            fontsize=10, fontweight='bold', color='darkorchid',
+            fontsize=9, fontweight='bold', color='darkorchid',
           )
 
 # Set x-axis to start from 0 for better comparison
