@@ -292,7 +292,7 @@ First few rows of 2010 data:
 <blockquote class="blockquote">
 <p>*<strong>ANSWER 1: Data Aggregation Strategy</strong></p>
 </blockquote>
-<div id="5b7abc8f" class="cell" data-execution_count="3">
+<div id="fc803798" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"2010 data shape:"</span>, df2010.shape)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"2021 data shape:"</span>, df2021.shape)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -349,7 +349,7 @@ First few rows of 2010 data:
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/stage-3-mapping-exploration-output-1.png" id="stage-3-mapping-exploration" width="759" height="566" class="figure-img"></p>
+<p><img src="index_files/figure-html/stage-3-mapping-exploration-output-1.png" id="stage-3-mapping-exploration" width="757" height="565" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -370,7 +370,8 @@ First few rows of 2010 data:
 <p>*<strong>ANSWER 1: Geometry Choices</strong></p>
 </blockquote>
 <p>Question 1a:Why is a horizontal bar chart better than a scatter plot for this data? Answer: Stadium is a categorical variable. It has 30 unique values. Scatter plot is good for continous variables not categorical variables. Scatter X-axis is showing 30 unique values of Stadium. Also, X-axis is showing 30 standium name and difficulty to read.</p>
-<p>Question 1b: When would you choose a vertical bar chart over horizontal? Answer: When the number of categories is &lt;12, Vertical bar chart is better (x-axis - category, y-axis value) than horizontal bar chart.</p>
+<p>Question 1b: When would you choose a vertical bar chart over horizontal?</p>
+<p>Answer: When the number of categories is &lt;12, Vertical bar chart is better (x-axis - category, y-axis value) than horizontal bar chart.</p>
 <blockquote class="blockquote">
 <p>*<strong>ANSWER 2: Aesthetic Mappings</strong> Question 2a: What does the color highlighting accomplish in Approach 4? Answer: Color highlighting accomplishes to highlight the Colorado Rockies stadium in the visualization.</p>
 </blockquote>
@@ -632,7 +633,11 @@ Change Over Time:
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Question 1: Using Subplot Layout</strong> - Create a two-facet visualization that shows the total runs for 2010 and 2021 for each stadium in a single figure. Highlight Colorado in the visualization.</p>
-<p><strong>Question 2: Explanation of the Visualization</strong> - Ask AI To Add A Paragraph Here To Explain The Visualization - Does AI come to the right conclusion? If not, why not?</p>
+<p>Answer: see the diagram above <strong>Question 2: Explanation of the Visualization</strong></p>
+<p><strong>Explanation of the Visualization:</strong></p>
+<p>This side-by-side comparison visualization demonstrates the persistent “Coors Field effect” over an 11-year span (2010-2021). The two horizontal bar charts show average runs per game for each MLB stadium, with Colorado (COL) highlighted in purple to draw attention to the primary finding. In both 2010 and 2021, Coors Field clearly stands out as the most run-friendly ballpark in Major League Baseball. The visualization employs object-oriented matplotlib techniques with shared styling between panels, making year-over-year comparison straightforward. By sorting stadiums independently by their respective year’s performance (2010 data sorted by 2010 runs, 2021 data sorted by 2021 runs), we can see how Colorado’s relative position has remained consistent—consistently at or near the top of scoring environments. The use of position encoding (bar length) for the quantitative variable (runs per game) and color encoding for the categorical variable (stadium identity) follows best practices in data visualization, allowing viewers to quickly identify both magnitude and categorical distinctions. The annotations provide precise numerical context, reinforcing the visual comparison. This visualization effectively communicates that altitude’s impact on baseball performance is not a temporary phenomenon but a persistent characteristic of Coors Field, likely due to reduced air resistance at Denver’s 5,280-foot elevation allowing baseballs to travel farther and carry more effectively.</p>
+<p><strong>Does AI come to the right conclusion? If not, why not?</strong></p>
+<p>Yes AI comparsion with 2010 and 2021 is correct. AI clearly mentioned 2021 colorado position consistent and near the top. Air has less resistance due to altitude.</p>
 </div>
 </div>
 </section>
